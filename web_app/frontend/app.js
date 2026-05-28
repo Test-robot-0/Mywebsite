@@ -122,7 +122,7 @@ generateBtn.addEventListener("click", async () => {
     formData.append("chunk_size", chunkSize)
     formData.append("speed", speed)
 
-    const response = await fetch("https://mywebsite-isuj.onrender.com", {
+    const response = await fetch("https://mywebsite-isuj.onrender.com/generate", {
         method: "POST",
         body: formData
     })
